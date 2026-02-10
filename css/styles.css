@@ -1,0 +1,73 @@
+body {
+  font-family: "Segoe UI", sans-serif;
+  background-color: #f7f7f7;
+  text-align: center;
+  padding: 20px;
+}
+
+#unidadU7 rect {
+  cursor: pointer;
+  transition: fill 0.2s ease;
+}
+
+#unidadU7 rect:hover {
+  fill: #b71c1c;
+}
+
+#info {
+  background: white;
+  border-radius: 12px;
+  padding: 20px;
+  margin: 30px auto;
+  width: 340px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  text-align: left;
+}
+
+#info h2 {
+  text-align: center;
+  color: #d32f2f;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.mision-vision {
+  display: flex;
+  gap: 40px;
+  margin: 40px 0;
+}
+
+.mision-vision .bloque {
+  flex: 1;
+  background-color: #f5f5f5;
+  padding: 30px;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .mision-vision {
+    flex-direction: column;
+  }
+}
+
+.estructura-general {
+  margin: 80px 0;
+}
+
+.estructura-lista {
+  margin-top: 30px;
+  padding-left: 20px;
+}
+
+.estructura-lista > li {
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.estructura-lista ul {
+  margin-top: 10px;
+  padding-left: 20px;
+}
