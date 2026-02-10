@@ -1,3 +1,4 @@
+/* ====== ESTILO GENERAL ====== */
 body {
   font-family: "Segoe UI", sans-serif;
   background-color: #f7f7f7;
@@ -5,8 +6,16 @@ body {
   padding: 20px;
 }
 
+/* ====== SVG UNIDAD U7 ====== */
+#unidadU7 {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* MUY IMPORTANTE: forzar eventos */
 #unidadU7 rect {
   cursor: pointer;
+  pointer-events: all;
   transition: fill 0.2s ease;
 }
 
@@ -14,6 +23,13 @@ body {
   fill: #b71c1c;
 }
 
+/* EL TEXTO NO DEBE CAPTURAR EL MOUSE */
+#unidadU7 text {
+  pointer-events: none;
+  user-select: none;
+}
+
+/* ====== PANEL DE INFO ====== */
 #info {
   background: white;
   border-radius: 12px;
@@ -34,6 +50,7 @@ ul {
   padding: 0;
 }
 
+/* ====== OTROS BLOQUES ====== */
 .mision-vision {
   display: flex;
   gap: 40px;
