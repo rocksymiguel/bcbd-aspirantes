@@ -8,3 +8,4 @@ fetch(basePath + "partials/header.html")
     document.getElementById("header").innerHTML = html;
   })
   .catch(err => console.error("Error cargando header:", err));
+
