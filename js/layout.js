@@ -9,10 +9,16 @@ fetch(basePath + "partials/header.html")
   .then(html => {
     document.getElementById("header").innerHTML = html;
 
-    // Ajustar enlaces automáticamente
+    // Ajustar enlaces correctamente
     const links = document.querySelectorAll("#header a");
+
     links.forEach(link => {
-      link.href = basePath + link.getAttribute("href");
+      const originalHref = link.getAttribute("href");
+
+      // Evitar modificar links externos
+      if (!originalHref.startsWith("http")) {
+        link.setAttribute("href", basePath + originalHref);
+      }
     });
   })
   .catch(err => console.error("Error cargando header:", err));
