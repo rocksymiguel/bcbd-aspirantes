@@ -1,5 +1,5 @@
 const basePath = window.location.hostname.includes("github.io")
-  ? "/bcbd-aspirantes"
+  ? "/bcbd-aspirantes/"
   : "/";
 
 fetch(basePath + "partials/header.html")
