@@ -1,7 +1,6 @@
-fetch('/partials/header.html')
+fetch("partials/header.html")
   .then(res => res.text())
-  .then(html => {
-    document.getElementById('header').innerHTML = html;
+  .then(data => {
+    document.getElementById("header").innerHTML = data;
   })
-  .catch(err => console.error('Error cargando header:', err));
-
+  .catch(error => console.error("Error cargando header:", error));
